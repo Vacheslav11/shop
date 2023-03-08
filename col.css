@@ -59,14 +59,13 @@ body {
 }
 
 .home{
-    padding-bottom: 14px;
-    padding-top: 14px;
     font-family: 'Open Sans', sans-serif;
     height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid silver;
 }
 
 .home-logo{
@@ -142,16 +141,264 @@ body {
 }
 
 .list{
-    padding: 0 80px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .list-text{
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+    color: #333333;
+    font-weight: 300;
+    padding-right: 33px;
+    transition:  color 0.2s linear;
+}
+.list-text:hover{
+    color: #ffc401;
+}
 
-    font-family: sans-serif;
-    margin-right: 43px;
-    font-size: 14px;
+
+.cover{
+    padding: 0 154px;
+    height: 640px;
+    width: 100%;
+    top: 201px;
+    background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+}
+.cover-logo_bac{
+    position: absolute;
+    transform: rotate(1deg);
+    left: 965px;
+    top: 257px;
+}
+.cover-logo{
+    position: absolute;
+    width: 46.6%;
+    height: 531px;
+    left: 992px;
+    top: 257px;
+}
+.cover-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    padding-top: 140px;
+}
+.cover-text__discount{
+    font-family: 'Open Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0.005em;
+    color: rgba(0, 0, 0, 0.76);
+}
+.cover-image{
+    width: 100%;
+    padding-left: 140px;
+    padding-right: 6px;
+    display: flex;
+    margin-top: -75px;
+}
+.cover-image__sofa {
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: rgba(201, 201, 201, 0.21);
+}
+.cover-image__sofa-bac{
+    transform: rotate(1deg);
+}
+.cover-image__sofa img{
+    position: absolute;
+    top: 37px;
+    right: 1px;
+}
+.cover-image__wing img{
+    position: absolute;
+    top: 28px;
+    right: 18px;
+}
+.cover-image__wing{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+}
+.cover-image__wing-bac{
+    transform: rotate(1deg);
+}
+.cover-image__hallway{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+.cover-image__hallway img{
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+.cover-image__bed{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+.cover-image__bed img{
+    position: absolute;
+    top: 28px;
+    right: 15px;
+}
+.cover-image__armchair{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%);
+}
+.cover-image__armchair img{
+    position: absolute;
+    top: 36px;
+    right: 24px;
+}
+.cover-image__hallway-image{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%);
+}
+.cover-image__hallway-image img{
+    position: absolute;
+    top: 21px;
+    right: 6px;
+}
+.cover-image__kitchen{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #FDFCFB 0%, #E2D1C3 100%);
+}
+.cover-image__kitchen img{
+    position: absolute;
+    top: 21px;
+    right: 15px;
+}
+.cover-image__bedroom{
+    position: relative;
+    width: 230px;
+    height: 126px;
+    background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+}
+.cover-image__bedroom img{
+    position: absolute;
+    top: 20px;
+    right: 11px;
+}
+.cover-image > div {
+    margin-left: 16px;
+}
+.title{
+    position: relative;
+
+}
+.title-text{
+    font-size: 48px;
     font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 154px;
+    margin-top: 140px;
+    border-bottom: solid black;
 
+}
+.title-text:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 1200px;
+    background-color: rgba(51, 51, 51, 0.27);
+    top: 34px;
+    left: 350px;
+}
+.card{
+    margin-top: 337px;
+
+}
+.card-sofa{
+    position: relative;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 280px;
+    height: 346px;
+}
+.card-sofa img{
+    position: absolute;
+    top: 89px;
+    right: 12px;
+}
+.card-sofa svg{
+    position: absolute;
+    top: 19px;
+    right: 63px;
+}
+.card-table{
+    position: relative;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 280px;
+    height: 346px;
+}
+.card-table img{
+    position: absolute;
+    top: 67px;
+    right: 23px;
+}
+.card-table svg{
+    position: absolute;
+    top: 19px;
+    right: 63px;
+}
+.card-chair{
+    position: relative;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 280px;
+    height: 346px;
+}
+.card-chair img{
+    position: absolute;
+    top: 60px;
+    right: 42px;
+}
+.card-chair svg{
+    position: absolute;
+    top: 19px;
+    right: 63px;
+}
+.card-bed{
+    position: relative;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 280px;
+    height: 346px;
+}
+.card-bed img{
+    position: absolute;
+    top: 64px;
+    right: 19px;
+}
+.card-bed svg{
+    position: absolute;
+    top: 19px;
+    right: 63px;
+}
+.card-holder{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 300px;
 
 
 
