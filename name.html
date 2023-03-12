@@ -5,10 +5,6 @@
   <title>Магазин</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="col.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <div class="header container">
@@ -121,32 +117,306 @@
 </div>
 <div class="cards">
   <div class="card">
+    <svg class="svg_back" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="29" fill="white"/>
+      <circle cx="29" cy="29" r="28" stroke="#333333" stroke-opacity="0.27" stroke-width="2"/>
+      <path d="M21.9393 26.9393C21.3536 27.5251 21.3536 28.4749 21.9393 29.0607L31.4853 38.6066C32.0711 39.1924 33.0208 39.1924 33.6066 38.6066C34.1924 38.0208 34.1924 37.0711 33.6066 36.4853L25.1213 28L33.6066 19.5147C34.1924 18.9289 34.1924 17.9792 33.6066 17.3934C33.0208 16.8076 32.0711 16.8076 31.4853 17.3934L21.9393 26.9393ZM24 26.5H23V29.5H24V26.5Z" fill="#333333" fill-opacity="0.27"/>
+    </svg>
+    <svg class="svg_forward" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="28" transform="matrix(-1 0 0 1 58 0)" fill="white" stroke="#8B4795" stroke-width="2"/>
+      <path d="M36.0607 26.9393C36.6464 27.5251 36.6464 28.4749 36.0607 29.0607L26.5147 38.6066C25.9289 39.1924 24.9792 39.1924 24.3934 38.6066C23.8076 38.0208 23.8076 37.0711 24.3934 36.4853L32.8787 28L24.3934 19.5147C23.8076 18.9289 23.8076 17.9792 24.3934 17.3934C24.9792 16.8076 25.9289 16.8076 26.5147 17.3934L36.0607 26.9393ZM34 26.5H35V29.5H34V26.5Z" fill="#8B4795"/>
+    </svg>
     <div class="card-holder">
       <div class="card-sofa">
+        <a class="card-sofa__text">-15%</a>
+        <a class="card-sofa__text-sell">хит продаж</a>
         <img src="image/big-sofa.png" alt="">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
         </svg>
       </div>
       <div class="card-table">
         <img src="image/table.png" alt="" >
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
         </svg>
       </div>
       <div class="card-chair">
         <img src="image/chair.png" alt="">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
         </svg>
       </div>
       <div class="card-bed">
         <img src="image/card-bed.png" alt="">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-favorites"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
         </svg>
       </div>
     </div>
+  </div>
+</div>
+<div class="card-text">
+  <div class="card-text__sofa">
+    <a class="card-text__name-text">ДИВАН</a>
+    <br>
+    <a class="card-text__name-text"> Авангард П—образный</a>
+    <br>
+    <a class="card-text__price"> 52 950 ₽  68 450 ₽</a>
+    <br>
+    <div class="card-text__basket-down">
+    <a class="card-text__basket" href="#">Добавить в корзину</a>
+    </div>
+  </div>
+  <div class="card-text__table">
+    <a class="card-text__name-text">СТОЛ</a>
+    <br>
+    <a class="card-text__name">Соло</a>
+    <br>
+    <a class="card-text__price"> 12 650 ₽  14 200 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+  <div class="card-text__chair">
+    <a class="card-text__name-text">СТУЛ</a>
+    <br>
+    <a class="card-text__name-text">Коломбо с подлокотниками</a>
+    <br>
+    <a class="card-text__price">6 150 ₽  7 640 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+  <div class="card-text__bed">
+    <a class="card-text__name-text">КРОВАТЬ</a>
+    <br>
+    <a class="card-text__name-text">Гармония</a>
+    <br>
+    <a class="card-text__price"> 13 390 ₽  15 480 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+</div>
+<div class="catalog">
+  <div class="catalog-furniture">
+    <img src="image/cushioned-furniture.png" alt="">
+    <a class="catalog-furniture__catalog">Каталог</a>
+    <a class="catalog-hm">126 предметов</a>
+    <a class="catalog-text">Мягкая мебель</a>
+  </div>
+  <div class="catalog-kitchens">
+    <a class="catalog-hm">68 предметов</a>
+    <a class="catalog-text">Кухни</a>
+    <img src="image/kitchens.png" alt="">
+  </div>
+  <div class="catalog-hallways">
+    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="28" transform="matrix(-1 0 0 1 58 0)" fill="white" stroke="#8B4795" stroke-width="2"/>
+      <path d="M36.0607 26.9393C36.6464 27.5251 36.6464 28.4749 36.0607 29.0607L26.5147 38.6066C25.9289 39.1924 24.9792 39.1924 24.3934 38.6066C23.8076 38.0208 23.8076 37.0711 24.3934 36.4853L32.8787 28L24.3934 19.5147C23.8076 18.9289 23.8076 17.9792 24.3934 17.3934C24.9792 16.8076 25.9289 16.8076 26.5147 17.3934L36.0607 26.9393ZM34 26.5H35V29.5H34V26.5Z" fill="#8B4795"/>
+    </svg>
+    <img src="image/hallways.png" alt="">
+    <a class="catalog-hm">53 предмета</a>
+    <a class="catalog-text">Прихожие</a>
+  </div>
+</div>
+<div>
+  <a class="title-text">Хиты продаж</a>
+</div>
+<div class="cards">
+  <div class="card">
+    <svg class="svg_back" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="29" fill="white"/>
+      <circle cx="29" cy="29" r="28" stroke="#333333" stroke-opacity="0.27" stroke-width="2"/>
+      <path d="M21.9393 26.9393C21.3536 27.5251 21.3536 28.4749 21.9393 29.0607L31.4853 38.6066C32.0711 39.1924 33.0208 39.1924 33.6066 38.6066C34.1924 38.0208 34.1924 37.0711 33.6066 36.4853L25.1213 28L33.6066 19.5147C34.1924 18.9289 34.1924 17.9792 33.6066 17.3934C33.0208 16.8076 32.0711 16.8076 31.4853 17.3934L21.9393 26.9393ZM24 26.5H23V29.5H24V26.5Z" fill="#333333" fill-opacity="0.27"/>
+    </svg>
+    <svg class="svg_forward" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="28" transform="matrix(-1 0 0 1 58 0)" fill="white" stroke="#8B4795" stroke-width="2"/>
+      <path d="M36.0607 26.9393C36.6464 27.5251 36.6464 28.4749 36.0607 29.0607L26.5147 38.6066C25.9289 39.1924 24.9792 39.1924 24.3934 38.6066C23.8076 38.0208 23.8076 37.0711 24.3934 36.4853L32.8787 28L24.3934 19.5147C23.8076 18.9289 23.8076 17.9792 24.3934 17.3934C24.9792 16.8076 25.9289 16.8076 26.5147 17.3934L36.0607 26.9393ZM34 26.5H35V29.5H34V26.5Z" fill="#8B4795"/>
+    </svg>
+    <div class="card-holder">
+      <div class="card-sofa">
+        <img src="image/big-sofa.png" alt="">
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-table">
+        <img src="image/table.png" alt="" >
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-chair">
+        <img src="image/chair.png" alt="">
+        <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-bed">
+        <img src="image/card-bed.png" alt="">
+        <svg class="card-favorites"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg class="card-rating" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-text">
+  <div class="card-text__sofa">
+    <a class="card-text__name-text">ДИВАН</a>
+    <br>
+    <a class="card-text__name-text"> Авангард П—образный</a>
+    <br>
+    <a class="card-text__price"> 52 950 ₽  68 450 ₽</a>
+    <br>
+    <div class="card-text__basket-down">
+      <a class="card-text__basket" href="#">Добавить в корзину</a>
+    </div>
+  </div>
+  <div class="card-text__table">
+    <a class="card-text__name-text">СТОЛ</a>
+    <br>
+    <a class="card-text__name">Соло</a>
+    <br>
+    <a class="card-text__price"> 12 650 ₽  14 200 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+  <div class="card-text__chair">
+    <a class="card-text__name-text">СТУЛ</a>
+    <br>
+    <a class="card-text__name-text">Коломбо с подлокотниками</a>
+    <br>
+    <a class="card-text__price">6 150 ₽  7 640 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+  <div class="card-text__bed">
+    <a class="card-text__name-text">КРОВАТЬ</a>
+    <br>
+    <a class="card-text__name-text">Гармония</a>
+    <br>
+    <a class="card-text__price"> 13 390 ₽  15 480 ₽</a>
+    <br>
+    <a class="card-text__basket" href="#"> Добавить в корзину</a>
+  </div>
+</div>
+<div class="group">
+  <div class="group-text">
+    <a class="group-text__new">Новинки</a>
+    <br>
+    <a class="group-text__style">Стильные и актуальные <br> новинки каждую неделю</a>
+    <svg class="group-text__forward" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="29" fill="white"/>
+      <circle cx="29" cy="29" r="28" stroke="#333333" stroke-opacity="0.27" stroke-width="2"/>
+      <path d="M21.9393 26.9393C21.3536 27.5251 21.3536 28.4749 21.9393 29.0607L31.4853 38.6066C32.0711 39.1924 33.0208 39.1924 33.6066 38.6066C34.1924 38.0208 34.1924 37.0711 33.6066 36.4853L25.1213 28L33.6066 19.5147C34.1924 18.9289 34.1924 17.9792 33.6066 17.3934C33.0208 16.8076 32.0711 16.8076 31.4853 17.3934L21.9393 26.9393ZM24 26.5H23V29.5H24V26.5Z" fill="#333333" fill-opacity="0.27"/>
+    </svg>
+    <svg class="group-text__back" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="29" cy="29" r="28" transform="matrix(-1 0 0 1 58 0)" fill="white" stroke="#8B4795" stroke-width="2"/>
+      <path d="M36.0607 26.9393C36.6464 27.5251 36.6464 28.4749 36.0607 29.0607L26.5147 38.6066C25.9289 39.1924 24.9792 39.1924 24.3934 38.6066C23.8076 38.0208 23.8076 37.0711 24.3934 36.4853L32.8787 28L24.3934 19.5147C23.8076 18.9289 23.8076 17.9792 24.3934 17.3934C24.9792 16.8076 25.9289 16.8076 26.5147 17.3934L36.0607 26.9393ZM34 26.5H35V29.5H34V26.5Z" fill="#8B4795"/>
+    </svg>
+    <div class="group-cards">
+      <div class="group-cards__closet">
+        <svg class="card-favorites"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4.49843L11.1518 5.02804L11.9993 6.3855L12.8478 5.02867L12 4.49843ZM12 23.9929L11.36 24.7613C11.7002 25.0446 12.1861 25.0706 12.5545 24.8251L12 23.9929ZM12.8478 5.02867C13.8348 3.45054 16.109 2.61077 18.1803 3.16208C19.1849 3.42946 20.1206 4.02268 20.8135 5.01279C21.5088 6.00634 22 7.45924 22 9.50203H24C24 7.13756 23.4287 5.26169 22.4521 3.8661C21.4731 2.46706 20.1276 1.61075 18.6947 1.22937C15.891 0.483136 12.6652 1.54882 11.1522 3.96819L12.8478 5.02867ZM22 9.50203C22 11.4673 21.1674 13.6844 19.4007 16.0344C17.6368 18.3807 14.9804 20.8056 11.4455 23.1607L12.5545 24.8251C16.2196 22.3833 19.0632 19.8117 20.9993 17.2362C22.9326 14.6646 24 12.0347 24 9.50203H22ZM12.64 23.2245C11.0721 21.9188 8.42144 19.9998 6.09979 17.5574C3.76864 15.1051 2 12.35 2 9.50203H0C0 13.1497 2.23136 16.3908 4.65021 18.9354C7.07856 21.49 9.9279 23.5686 11.36 24.7613L12.64 23.2245ZM2 9.50203C2 7.46124 2.49115 6.00874 3.18654 5.01486C3.87958 4.02434 4.81561 3.43029 5.82035 3.16215C7.89167 2.60937 10.165 3.4476 11.1518 5.02804L12.8482 3.96882C11.335 1.54517 8.10833 0.481558 5.30465 1.22978C3.87189 1.61214 2.52667 2.4693 1.54783 3.86829C0.571352 5.2639 0 7.13918 0 9.50203H2Z" fill="#969696"/>
+        </svg>
+        <svg clarss="card-rating"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M1 1V23H9V1H1Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 5V23H23V5H15Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+          </g>
+        </svg>
+        <img src="image/closet.png" alt="" class="group-cards__closet-img">
+        <a class="group-cards__closet-name">ШКАФ ТРЕХДВЕРНЫЙ</a>
+        <a class="group-cards__closet-text">Ким</a>
+        <a class="group-cards__closet-hm">19 370 ₽</a>
+        <a class="group-cards__closet-old"> 23 140 ₽</a>
+        <a class="group-cards__closet-buy" href="#">Добавить в корзину</a>
+
+      </div>
+      <div class="group-cards__room">
+        <img src="image/bedroom-big.png" alt="" class="group-cards__room-img">
+        <a class="group-cards__room-name" >Констанция NEW</a>
+        <br>
+        <a class="group-cards__room-hm">34 800 ₽</a>
+        <a class="group-cards__room-old">42 450 ₽</a>
+      </div>
+      <div class="group-cards__sofa">
+        <img src="image/sofa-big.png" alt="" class="group-cards__sofa-img">
+        <a class="group-cards__sofa-mane">Финка 20 с оттоманкой</a>
+        <a class="group-cards__sofa-hm">58 000 ₽</a>
+        <a class="group-cards__sofa-old">62 000 ₽</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="construct">
+  <div>
+    <a class="construct-text__name">Идеи для вдохновения</a>
+    <div class="construct-menu">
+      <a href="#" class="construct-text__sofa">Кухня</a>
+      <a href="#" class="construct-text__room">Спальня</a>
+      <a href="#" class="construct-text__living">Гостиная</a>
+      <a href="#" class="construct-text__hallway">Прихожая</a>
+      <a href="#" class="construct-text__children">Детская</a>
+    </div>
+  </div>
+  <div class="construct-box">
+    <img src="image/construct-room.png" alt="" class="">
+    <div class="construct-box__group">
+
+    </div>
+    <p><a href="#"><img src="image/link.png" alt="" class="construct-link"></a></p>
+    <p><a href="#"><img src="image/link-none.png" alt="" class="construct-link_none"></a></p>
+    <p><a href="#"><img src="image/link.png" alt="" class="construct-link__back"></a></p>
+    <p><a href="#"><img src="image/link.png" alt="" class="construct-link__left"></a></p>
   </div>
 </div>
 </body>

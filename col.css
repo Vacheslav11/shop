@@ -1,10 +1,20 @@
+@font-face {
+    font-family: 'Value Sans Pro';
+    src: url("./test/fonts/ValueSansPro-Regular.eot");
+    src: url("./test/fonts/ValueSansPro-Regular.eot?#iefix")format("embedded-opentype"),
+    url("./test/fonts/ValueSansPro-Regular.woff") format("woff"),
+    url("./test/fonts/ValueSansPro-Regular.woff2") format("woff2"),
+    url("./test/fonts/ValueSansPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Value Sans Pro', sans-serif;
 }
 
 .container {
@@ -59,7 +69,7 @@ body {
 }
 
 .home{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Value Sans Pro', sans-serif;
     height: 90px;
     width: 100%;
     display: flex;
@@ -151,7 +161,7 @@ body {
 
 .list-text{
     text-decoration: none;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Value Sans Pro', sans-serif;
     color: #333333;
     font-weight: 300;
     padding-right: 33px;
@@ -183,16 +193,16 @@ body {
     top: 257px;
 }
 .cover-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Value Sans Pro';
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 64px;
     letter-spacing: -0.01em;
     text-align: left;
     padding-top: 140px;
 }
 .cover-text__discount{
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Value Sans Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
@@ -328,8 +338,20 @@ body {
     left: 350px;
 }
 .card{
+    position: relative;
     margin-top: 337px;
-
+}
+.svg_back{
+    position: absolute;
+    width: 58px;
+    top: 189px;
+    left: 154px;
+}
+.svg_forward{
+    position: absolute;
+    width: 58px;
+    top: 189px;
+    left: 1640px;
 }
 .card-sofa{
     position: relative;
@@ -337,15 +359,40 @@ body {
     width: 280px;
     height: 346px;
 }
+.card-sofa__text{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Value Sans Pro', sans-serif;
+    background-color: #8B4795;
+    padding: 8px 8px;
+    font-weight: 500;
+    top: 280px;
+    border-radius : 0 20px 20px 0;
+}
+.card-sofa__text-sell{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Value Sans Pro';
+    background-color: #b3d4fc;
+    padding: 4px 8px;
+    font-weight: 500;
+    top: 310px;
+    border-radius : 0 20px 20px 0;
+}
 .card-sofa img{
     position: absolute;
     top: 89px;
     right: 12px;
 }
-.card-sofa svg{
+.card-favorites{
     position: absolute;
     top: 19px;
     right: 63px;
+}
+.card-rating{
+    position: absolute;
+    top: 19px;
+    right: 19px;
 }
 .card-table{
     position: relative;
@@ -358,11 +405,6 @@ body {
     top: 67px;
     right: 23px;
 }
-.card-table svg{
-    position: absolute;
-    top: 19px;
-    right: 63px;
-}
 .card-chair{
     position: relative;
     border: 1px solid rgba(51, 51, 51, 0.27);
@@ -374,10 +416,15 @@ body {
     top: 60px;
     right: 42px;
 }
-.card-chair svg{
+.card-chair__svg{
     position: absolute;
     top: 19px;
     right: 63px;
+}
+.card-chair__rating{
+    position: absolute;
+    top: 19px;
+    right: 19px;
 }
 .card-bed{
     position: relative;
@@ -390,16 +437,424 @@ body {
     top: 64px;
     right: 19px;
 }
-.card-bed svg{
+.card-table__svg{
     position: absolute;
     top: 19px;
-    right: 63px;
+    right: 64px;
+}
+.card-table__rating{
+    position: absolute;
+    top: 19px;
+    right: 19px;
 }
 .card-holder{
     display:flex;
     justify-content: space-between;
     margin: 0 300px;
+}
+.card-text{
+    display:flex;
+    justify-content: space-between;
+    margin: 14px 300px;
+    line-height: 2;
+}
+
+.card-text__name-text{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.card-text__name{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+.card-text__price{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.card-text__basket{
+    font-family: 'Value Sans Pro';
+    text-decoration: none;
+    color: black;
+    padding: 16px 32px;
+    font-weight: 700;
+    background: #FFD103;
+    border-radius: 100px;
+    letter-spacing: 0.005em;
+    line-height: 5;
+
+}
+.card-text__table{
+    position: absolute;
+    left: 623px;
+}
+.card-text__chair{
+    position: absolute;
+    left: 945px;
+}
+.card-text__bed{
+    position: absolute;
+    left: 1265px;
+}
+.catalog{
+    display: flex;
+    width: 100%;
+    padding-top: 140px;
+    justify-content: space-between;
+
+}
+.catalog-furniture{
+    position: relative;
+    width: 33%;
+}
+.catalog-furniture__catalog{
+    position: absolute;
+    color: #FFFFFF;
+    left: 80px;
+    top: 300px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+}
+.catalog-furniture__catalog:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: calc(7vw - 10px);
+    background-color: #FFFFFF;
+    top: 50%;
+    margin-left: 15px;
+}
+.catalog-hm{
+    position: absolute;
+    color: #FFFFFF;
+    left: 80px;
+    top: 488px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+}
+.catalog-text{
+    position: absolute;
+    color: #FFFFFF;
+    left: 80px;
+    top: 550px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 64px;
+}
+.catalog-kitchens{
+    position: relative;
+    width: 33%;
+}
+.catalog-hallways{
+    position: relative;
+    width: 33%;
+}
+.catalog-hallways svg{
+    position: absolute;
+    top: 335px;
+    left: 510px;
+}
+.group{
+    position: relative;
+    top: 140px;
+    width: 100%;
+    height: 794px;
+    background: linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%);
+}
+.group-text__new{
+    position: absolute;
+    width: 183px;
+    height: 64px;
+    left: 151px;
+    top: 236px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+}
+.group-text__style{
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    left: 154px;
+    top: 330px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+}
+.group-text__forward{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 154px;
+    top: 468px;
+}
+.group-text__back{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 235px;
+    top: 468px;
+}
+.group-cards{
+}
+.group-cards__closet {
+    position: absolute;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 354px;
+    height: 514px;
+    background: #FFFFFF;
+    left: 672px;
+    top: 140px;
+}
+.group-cards__room{
+    position: absolute;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 354px;
+    height: 514px;
+    background: #FFFFFF;
+    left: 1042px;
+    top: 140px;
+}
+.group-cards__sofa{
+    position: absolute;
+    border: 1px solid rgba(51, 51, 51, 0.27);
+    width: 354px;
+    height: 514px;
+    background: #FFFFFF;
+    left: 1412px;
+    top: 140px;
+}
+.group-cards__closet-img{
+    position: absolute;
+    width: 215px;
+    height: 260px;
+    top: 60px;
+    left: 67px;
+}
+.group-cards__closet-name{
+    position: absolute;
+    top: 340px;
+    left: 34px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.group-cards__closet-text{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    width: 40px;
+    height: 20px;
+    left: 34px;
+    top: 367px;
+}
+.group-cards__closet-hm{
+    position: absolute;
+    width: 73px;
+    height: 28px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    top: 391px;
+    left: 34px;
+}
+.group-cards__closet-old{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    top: 391px;
+    left: 123px;
+}
+.group-cards__closet-buy{
+    position: absolute;
+    background: #FFD103;
+    text-decoration: none;
+    color: #333333;
+    width: 220px;
+    height: 48px;
+    top: 432px;
+    left: 34px;
+    padding: 16px 32px;
+    font-weight: 700;
+    border-radius: 100px;
+    letter-spacing: 0.005em;
+}
+.group-cards__room-img{
+    width: 352px;
+}
+.group-cards__room-name{
+    position: absolute;
+    width: 166px;
+    height: 20px;
+    top: 419px;
+    left: 34px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.group-cards__room-hm{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    top: 447px;
+    left: 34px;
+}
+.group-cards__room-old{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    top: 447px;
+    left: 132px;
+}
+.group-cards__sofa-img{
+    position: absolute;
+    top: 109px;
+    left: 13px;
+}
+.group-cards__sofa-mane{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    top: 419px;
+    left: 34px;
+}
+.group-cards__sofa-hm{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    top: 447px;
+    left: 34px;
+}
+.group-cards__sofa-old{
+    position: absolute;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    top: 447px;
+    left: 134px;
+}
+.construct{
+    position: relative;
+    top: 280px;
+    width: 100%;
+    left: 154px;
+}
+.construct-text__name{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+}
+.construct-menu {
+    position: absolute;
+    top: 78px;
 
 
-
+}
+.construct-menu a{
+    text-decoration: none;
+    color: #333333;
+    padding-right: 34px;
+}
+.construct-text__sofa:hover {
+    font-weight: 700;
+}
+.construct-text__room:hover {
+    font-weight: 700;
+}
+.construct-text__living:hover {
+    font-weight: 700;
+}
+.construct-text__hallway:hover {
+    font-weight: 700;
+}
+.construct-text__children:hover {
+    font-weight: 700;
+}
+.construct-box{
+    position: relative;
+    top: 65px;
+}
+.construct-box__group{
+    position: absolute;
+    width: 175px;
+    height: 149px;
+    background: #FFFFFF;
+    top: 313px;
+    left: 93px;
+}
+.construct-link{
+    position: absolute;
+    top: 240px;
+    left: 280px;
+}
+.construct-link_none{
+    position: absolute;
+    top: 504px;
+    left: 47px;
+}
+.construct-link__back{
+    position: absolute;
+    top: 443px;
+    left: 973px;
+}
+.construct-link__left{
+    position: absolute;
+    top: 376px;
+    left: 624px;
 }
