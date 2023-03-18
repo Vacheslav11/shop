@@ -1246,7 +1246,7 @@ body {
 
 .desk{
     position: relative;
-    padding-top: 500px;
+    top: 500px;
     padding-left: 155px;
     padding-right: 155px;
     width: 100%;
@@ -1275,18 +1275,339 @@ body {
 }
 .desk-img__five{
     position: absolute;
-    top: 800px;
+    top: 299px;
 }
 .desk-img__six{
     position: absolute;
-    top: 800px;
+    top: 299px;
     left: 450px;
 }
 .desk-img__seven{
     position: absolute;
-    top: 874px;
+    top: 373px;
     left: 1333px;
     width: 354px;
     height: 357px;
+}
+.desk-box__name{
+    position: absolute;
+    top: 204px;
+    left:1060px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+}
+.desk-box__info{
+    position: absolute;
+    top: 258px;
+    left:1080px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: center;
 
+}
+.desk-box__vk{
+    position: absolute;
+    top: 380px;
+    left:1070px;
+    width: 220px;
+    height: 48px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #333333;
+    letter-spacing: 0.005em;
+    text-align: center;
+    background: #FFD103;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 0;
+}
+.desk-box__odn{
+    position: absolute;
+    top: 438px;
+    left:1070px;
+    width: 220px;
+    height: 48px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    background: #FFD103;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 0;
+    white-space: nowrap;
+}
+.desk-box__inst{
+    position: absolute;
+    top: 499px;
+    color: #333333;
+    left:1070px;
+    width: 220px;
+    height: 48px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    background: #FFD103;
+    padding: 16px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 0;
+}
+.end{
+    position: relative;
+    top: 640px;
+    width: 100%;
+    border-bottom: 1px solid #C1C1C1;
+}
+.end-button{
+    position: absolute;
+    top: 130px;
+    left: 870px;
+    padding: 15px 28px;
+    cursor: pointer;
+    border-radius: 100px;
+    text-decoration: none;
+    background: #EDEBE9;
+}
+.end-button__text{
+    position: absolute;
+    top: 130px;
+    left: 1030px;
+    font-family:'Value Sans Pro',sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+.end-box{
+    height: 407px;
+    background: #EDEBE9;
+}
+.end-box__text{
+    position: absolute;
+    top: 60px;
+    left: 155px;
+}
+.end-box__text a{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.end-box__text p {
+    Opacity: 90%;
+    white-space: nowrap;
+}
+.end-redact__text{
+    position: absolute;
+    top: 50px;
+}
+.end-redact__two{
+    position: absolute;
+    padding-left: 220px;
+    top: 50px;
+}
+.end-redact__four{
+    position: absolute;
+    padding-left: 450px;
+    top: 50px;
+}
+.end-redact__three{
+    position: absolute;
+    padding-left: 450px;
+    top: -0px;
+}
+.end-five__redact{
+    position: absolute;
+    top: 50px;
+}
+.end-redact__five{
+    position: absolute;
+    padding-left: 660px;
+    top: -0px;
+}
+.end-redact__six{
+    position: absolute;
+    padding-left: 870px;
+    top: -0px;
+}
+.end-redact__six a{
+    font-style: normal;
+    line-height: 16px;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+}
+.end-input__redact{
+    position: absolute;
+    top: 65px;
+}
+.end-input{
+    border-radius: 60px;
+    background: #FFFFFF;
+    padding: 15px;
+    width: 300px;
+    border: #FFFFFF;
+
+}
+.end-input:focus{
+    outline: none;
+}
+.end-redact__seven{
+    position: absolute;
+    left: 1500px;
+    top: 60px;
+}
+.seven-number{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-decoration: none;
+    color: #333333;
+
+}
+.seven-mail{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.seven-address{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.seven-place{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.seven-inf{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+.seven-time{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+.end-applications{
+
+}
+.vk{
+    position: absolute;
+    left: 70px;
+}
+.class{
+    position: absolute;
+    left: 140px;
+
+}
+.tg:hover circle {
+    fill: #b3d4fc;
+    transition: 0.2s;
+}
+.vk:hover circle{
+    fill: blue;
+    transition: 0.2s;
+}
+.class:hover circle{
+    fill: #ffc401;
+    transition: 0.2s;
+}
+.box-end{
+    position: relative;
+    top: 640px;
+    width: 100%;
+    background:#EDEBE9;
+    height: 120px;
+}
+.box-end__item{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 155px;
+}
+.box-end__item-text{
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.box-end__text-item{
+    padding-left: 50px ;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+.box-end__payment{
+    padding-left: 166px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+}
+.box-end__card{
+    position: absolute;
+    left: 780px;
+    top:10px;
+}
+.box-end__svg{
+    position: absolute;
+    left: 1350px;
+    top:10px;
 }
