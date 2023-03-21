@@ -46,7 +46,7 @@ body {
     margin-right: 20px;
 }
 .header-nav__item:hover{
-    font-weight: 800;
+    color: #8B4795CC;
     transition: 0.2s;
 }
 
@@ -419,7 +419,6 @@ body {
 }
 
 .card-holder svg:hover path{
-    fill: red;
     stroke: red;
     transition: 0.2s;
 }
@@ -453,10 +452,17 @@ body {
     top: 19px;
     right: 63px;
 }
+.card-favorites:hover path{
+    fill:  red;
+    transition: 0.2s;
+}
 .card-rating{
     position: absolute;
     top: 19px;
     right: 19px;
+}
+.card-rating:hover path{
+    stroke: red;
 }
 .card-table{
     position: relative;
@@ -527,29 +533,26 @@ body {
 }
 
 .card-text__name-text{
-    font-family: 'Value Sans Pro', sans-serif;;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-}
-.card-text__name{
-    font-family: 'Value Sans Pro', sans-serif;;
+    font-family: 'Value Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 20px;
+
+}
+.card-text__name{
+    font-family: 'Value Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
 }
 .card-text__price{
-    font-family: 'Value Sans Pro', sans-serif;;
+    font-family: 'Value Sans Pro', sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 20px;
     line-height: 28px;
 }
-.card-text__price-none{
-    text-decoration: line-through;
-}
+
 .card-text__basket{
     font-family:'Value Sans Pro', sans-serif;;
     text-decoration: none;
@@ -706,14 +709,23 @@ body {
     top: 140px;
     cursor: pointer;
 }
-.group-cards__closet:hover{
+.group-cards__closet:hover {
     border: 1px solid #8B4795;
 }
+
+.group-cards__closet:hover button{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
 .group-cards__closet svg:hover path{
-    fill: red;
     stroke: red;
     transition: 0.2s;
+}
 
+.group-cards__closet:hover svg{
+    visibility: visible;
 }
 
 .group-cards__room{
@@ -726,9 +738,11 @@ body {
     top: 140px;
     cursor: pointer;
 }
+
 .group-cards__room:hover{
     border: 1px solid #8B4795;
 }
+
 .group-cards__sofa{
     position: absolute;
     border: 1px solid rgba(51, 51, 51, 0.27);
@@ -739,9 +753,11 @@ body {
     top: 140px;
     cursor: pointer;
 }
+
 .group-cards__sofa:hover{
     border: 1px solid #8B4795;
 }
+
 .group-cards__closet-img{
     position: absolute;
     width: 215px;
@@ -749,6 +765,7 @@ body {
     top: 60px;
     left: 67px;
 }
+
 .group-cards__closet-name{
     position: absolute;
     top: 340px;
@@ -759,6 +776,7 @@ body {
     font-size: 14px;
     line-height: 14px;
 }
+
 .group-cards__closet-text{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;;
@@ -771,6 +789,7 @@ body {
     left: 34px;
     top: 367px;
 }
+
 .group-cards__closet-hm{
     position: absolute;
     width: 73px;
@@ -783,6 +802,13 @@ body {
     top: 391px;
     left: 34px;
 }
+.group-cards__sofa:hover svg{
+    visibility: visible;
+}
+.group-cards__sofa:hover button{
+    visibility: visible;
+}
+
 .group-cards__closet-old{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;;
@@ -794,6 +820,11 @@ body {
     left: 123px;
     text-decoration: line-through;
 }
+
+.group-cards__svg{
+    visibility: hidden;
+}
+
 .group-cards__closet-buy{
     position: absolute;
     background: #FFD103;
@@ -810,15 +841,18 @@ body {
     font-size: 1rem;
     border: 0;
     cursor: pointer;
+    visibility: hidden;
 }
+
 .group-cards__room-img{
     width: 352px;
 }
+
 .group-cards__room-name{
     position: absolute;
     width: 166px;
     height: 20px;
-    top: 419px;
+    top: 367px;
     left: 34px;
     font-family: 'Value Sans Pro', sans-serif;;
     font-style: normal;
@@ -835,9 +869,16 @@ body {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.005em;
-    top: 447px;
+    top: 391px;
     left: 34px;
 }
+.group-cards__room:hover svg{
+    visibility: visible;
+}
+.group-cards__room:hover button{
+    visibility: visible;
+}
+
 .group-cards__room-old{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;;
@@ -846,15 +887,17 @@ body {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.005em;
-    top: 447px;
+    top: 391px;
     left: 132px;
     text-decoration: line-through;
 }
+
 .group-cards__sofa-img{
     position: absolute;
     top: 109px;
     left: 13px;
 }
+
 .group-cards__sofa-mane{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;
@@ -863,9 +906,10 @@ body {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.005em;
-    top: 419px;
+    top: 367px;
     left: 34px;
 }
+
 .group-cards__sofa-hm{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;
@@ -874,9 +918,10 @@ body {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.005em;
-    top: 447px;
+    top: 391px;
     left: 34px;
 }
+
 .group-cards__sofa-old{
     position: absolute;
     font-family: 'Value Sans Pro', sans-serif;;
@@ -885,10 +930,11 @@ body {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.005em;
-    top: 447px;
+    top: 391px;
     left: 134px;
     text-decoration: line-through;
 }
+
 .construct{
     position: relative;
     top: 240px;
@@ -897,9 +943,11 @@ body {
     padding-bottom: 154px;
     border-bottom: 1px solid #C1C1C1;
 }
+
 .construct-left{
     left: 153px;
 }
+
 .construct-text__name{
     font-family: 'Value Sans Pro', sans-serif;;
     font-style: normal;
@@ -907,38 +955,44 @@ body {
     font-size: 48px;
     line-height: 64px;
 }
+
 .construct-menu {
     position: absolute;
     top: 78px;
-
-
 }
+
 .construct-menu a{
     text-decoration: none;
     color: #333333;
     padding-right: 34px;
 }
+
 .construct-text__sofa:hover {
     font-weight: 700;
 }
+
 .construct-text__room:hover {
     font-weight: 700;
 }
+
 .construct-text__living:hover {
     font-weight: 700;
 }
+
 .construct-text__hallway:hover {
     font-weight: 700;
 }
+
 .construct-text__children:hover {
     font-weight: 700;
 }
+
 .construct-box{
     display: flex;
     position: relative;
     top: 65px;
-
 }
+
 .construct-box__group{
     position: absolute;
     width: 175px;
@@ -947,32 +1001,37 @@ body {
     top: 313px;
     left: 93px;
 }
+
 .construct-link{
     position: absolute;
     top: 240px;
     left: 280px;
 }
+
 .construct-link_none{
     position: absolute;
     top: 504px;
     left: 47px;
 }
+
 .construct-link__back{
     position: absolute;
     top: 443px;
     left: 973px;
 }
+
 .construct-link__left{
     position: absolute;
     top: 376px;
     left: 624px;
 }
+
 .construct-box__left{
     position: absolute;
     padding-top: 167px;
     left: 66%;
-
 }
+
 .test{
     height: 58px;
     width:  58px;
@@ -983,6 +1042,7 @@ body {
     border: 2px solid rgba(51, 51, 51, 0.27);
     background: #FFFFFF;
 }
+
 .test:hover {
     border: 2px solid #8B4795;
     transition: 0.2s;
@@ -992,6 +1052,7 @@ body {
     border-color: #8B4795;
     transition: 0.2s;
 }
+
 .arrow {
     margin: 0;
     top: 35%;
@@ -1001,26 +1062,31 @@ body {
     border-width: 0 2px 2px 0;
     padding: 7px;
 }
+
 .left {
     transform: rotate(135deg) translate(-50%,-50%);
 }
+
 .right {
     transform: rotate(-45deg);
 }
+
 .test-stop{
     position: absolute;
     top: 335px;
     left: 80%;
-
 }
+
 .construct-box_border{
     display: flex;
 }
+
 .test-border__left{
     position: absolute;
     top: 615px;
     left: 70%;
 }
+
 .test-border__right{
     position: absolute;
     top: 615px;
@@ -1031,12 +1097,13 @@ body {
     position: absolute;
     left: 127px;
     top: 25px;
-
 }
+
 .box-svg__favorite:hover path {
     fill: red;
     transition: 0.2s;
 }
+
 .construct-box__text{
     padding-left: 15px;
     font-family: 'Value Sans Pro',sans-serif;
@@ -1045,6 +1112,7 @@ body {
     font-size: 23px;
     line-height: 15px;
 }
+
 .construct-box__text-two{
     font-family: 'Value Sans Pro',sans-serif;
     font-style: normal;
@@ -1052,18 +1120,17 @@ body {
     font-size: 17px;
     line-height: 1px;
     padding-left: 15px;
-
 }
+
 .construct-box__text-hm{
     position: absolute;
-
     padding-left: 15px;
     font-family: 'Value Sans Pro',sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-
 }
+
 .construct-box__text-none{
     position: absolute;
     padding-top: 21px;
@@ -1074,16 +1141,19 @@ body {
     padding-left: 15px;
     text-decoration: line-through;
 }
+
 .box-svg__basket{
     position: absolute;
     left: 127px;
     top: 95px;
 }
+
 .box-svg__basket:hover path{
     stroke: red;
     transition: 0.2s;
     cursor: pointer;
 }
+
 .services{
     position: relative;
     top: 340px;
@@ -1091,6 +1161,7 @@ body {
     padding-right: 154px;
     width: 100%;
 }
+
 .services-text{
     font-family: 'Value Sans Pro',sans-serif;
     font-style: normal;
@@ -1098,25 +1169,29 @@ body {
     font-size: 48px;
     line-height: 48px;
 }
+
 .services-box{
     display: flex;
     justify-content: space-between;
-
-
 }
+
 .services-box__size{
     position: relative;
     width: 400px;
     height: 302px;
     background: #EDEBE9;
     cursor: pointer;
-
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    background-position: 1px -400px;
+    transition: background 1s ease-out;
 }
+
 .services-box__size-img{
     position: absolute;
     top: 40px;
     left: 205px;
 }
+
 .services-box__size-text{
     position: absolute;
     font-family: 'Value Sans Pro',sans-serif;
@@ -1127,13 +1202,19 @@ body {
     left: 45px;
     top: 220px;
 }
+
 .services-box__design{
     position: relative;
     width: 700px;
     height: 302px;
     background: #EDEBE9;
     cursor: pointer;
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    background-position: 1px -700px;
+    transition: background 1s ease-out;
 }
+
+
 .services-box__design-img{
     position: absolute;
     left: 426px;
@@ -1146,6 +1227,9 @@ body {
     height: 302px;
     background: #EDEBE9;
     cursor: pointer;
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    background-position: 1px -400px;
+    transition: background 1s ease-out;
 }
 .services-box__design-text{
     position: absolute;
@@ -1173,16 +1257,13 @@ body {
     top: 220px;
 }
 .services-box__size:hover{
-    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
-    transition: 0.2s;
+    background-position: 400px;
 }
 .services-box__design:hover{
-    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
-    transition: 0.2s;
+    background-position: 700px;
 }
 .services-box__cargo:hover{
-    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
-    transition: 0.2s;
+    background-position: 400px;
 }
 .services-box__delivery{
     position: relative;
@@ -1190,6 +1271,9 @@ body {
     height: 302px;
     background: #EDEBE9;
     cursor: pointer;
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    background-position: 1px -550px;
+    transition: background 1s ease-out;
 }
 
 .services-box__installation{
@@ -1198,6 +1282,9 @@ body {
     height: 302px;
     background: #EDEBE9;
     cursor: pointer;
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    background-position: 1px -965px;
+    transition: background 1s ease-out;
 }
 .services-box__dawn{
     padding-top: 17px;
@@ -1235,13 +1322,11 @@ body {
     top: 220px;
 }
 .services-box__delivery:hover{
-    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
-    transition: 0.2s;
+    background-position: 550px;
 }
 
 .services-box__installation:hover{
-    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
-    transition: 0.2s;
+    background-position: 965px;
 }
 
 .desk{
@@ -1380,7 +1465,7 @@ body {
     border-bottom: 1px solid #C1C1C1;
 }
 .end-button{
-    position: absolute;
+
     top: 130px;
     left: 870px;
     padding: 15px 28px;
@@ -1390,7 +1475,7 @@ body {
     background: #EDEBE9;
 }
 .end-button__text{
-    position: absolute;
+
     top: 130px;
     left: 1030px;
     font-family:'Value Sans Pro',sans-serif;
@@ -1403,13 +1488,18 @@ body {
 .end-box{
     height: 407px;
     background: #EDEBE9;
+    justify-content: space-between;
+    white-space: normal;
+    display: flex;
 }
 .end-box__text{
-    position: absolute;
-    top: 60px;
-    left: 155px;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 155px;
+    display: flex;
+    justify-content: space-between;
 }
-.end-box__text a{
+.end-box__text p{
     font-family: 'Value Sans Pro',sans-serif;
     font-style: normal;
     line-height: 20px;
@@ -1419,42 +1509,63 @@ body {
     font-size: 20px;
     white-space: nowrap;
 }
-.end-box__text p {
-    Opacity: 90%;
-    white-space: nowrap;
+.end-box__text-one{
+    width: 45%;
+    position: center;
+    line-height: 16px;
+
+
+}
+.end-box__text a{
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+
 }
 .end-redact__text{
-    position: absolute;
-    top: 50px;
+    font-family: 'Value Sans Pro',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+
 }
 .end-redact__two{
-    position: absolute;
-    padding-left: 220px;
-    top: 50px;
+
 }
 .end-redact__four{
-    position: absolute;
-    padding-left: 450px;
-    top: 50px;
+
+
 }
 .end-redact__three{
-    position: absolute;
-    padding-left: 450px;
-    top: -0px;
+    width: 20%;
+    position: center;
+
+
+
+
 }
 .end-five__redact{
-    position: absolute;
-    top: 50px;
+
 }
 .end-redact__five{
-    position: absolute;
-    padding-left: 660px;
-    top: -0px;
+    width: 20%;
+    text-align: start;
+
 }
 .end-redact__six{
-    position: absolute;
-    padding-left: 870px;
-    top: -0px;
+    width: 60%;
+
+
+
 }
 .end-redact__six a{
     font-style: normal;
@@ -1463,8 +1574,7 @@ body {
     letter-spacing: -0.01em;
 }
 .end-input__redact{
-    position: absolute;
-    top: 65px;
+
 }
 .end-input{
     border-radius: 60px;
@@ -1478,9 +1588,7 @@ body {
     outline: none;
 }
 .end-redact__seven{
-    position: absolute;
-    left: 1500px;
-    top: 60px;
+
 }
 .seven-number{
     font-family: 'Value Sans Pro',sans-serif;
@@ -1537,27 +1645,19 @@ body {
 
 }
 .end-applications{
-
+    display: flex;
+    justify-content: space-evenly;
 }
-.vk{
-    position: absolute;
-    left: 70px;
-}
-.class{
-    position: absolute;
-    left: 140px;
-
-}
-.tg:hover circle {
-    fill: #b3d4fc;
+.tg-icon:hover{
+    background: #b3d4fc;
     transition: 0.2s;
 }
-.vk:hover circle{
-    fill: blue;
+.vk-icon:hover{
+    background: blue;
     transition: 0.2s;
 }
-.class:hover circle{
-    fill: #ffc401;
+.class-icon:hover{
+    background: #ffc401;
     transition: 0.2s;
 }
 .box-end{
@@ -1589,7 +1689,7 @@ body {
     line-height: 18px;
     letter-spacing: 0;
     text-align: left;
-
+    color: #333333;
 }
 .box-end__payment{
     padding-left: 166px;
@@ -1602,12 +1702,45 @@ body {
 
 }
 .box-end__card{
-    position: absolute;
-    left: 780px;
-    top:10px;
+    display: flex;
+    line-height: 18px;
+
+
 }
+
 .box-end__svg{
-    position: absolute;
-    left: 1350px;
-    top:10px;
+
+}
+.tg-icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px;
+    background: #C0C0C0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+.vk-icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px;
+    background: #C0C0C0;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.class-icon{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px;
+    background: #C0C0C0;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.end-applications svg {
+    width: 100%;
 }
