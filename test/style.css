@@ -1,0 +1,168 @@
+@font-face { 
+    font-family: "ValueSansProRegular";
+    src: url("../fonts/ValueSansProRegular/ValueSansProRegular.eot");
+    src: url("../fonts/ValueSansProRegular/ValueSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ValueSansProRegular/ValueSansProRegular.woff") format("woff"),
+    url("../fonts/ValueSansProRegular/ValueSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: 'Value Sans Pro', sans-serif;
+    color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    background: #EDEBE9;
+    padding: 10px 80px;
+}
+.header {
+    justify-content: space-between;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    width: 35%;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding-right:20px;
+    transition: 0.2s;
+}
+
+.menu-link:hover {
+    color: red;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    position: relative;
+}
+
+.logo span:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 2px);
+    border-bottom: 1px dashed #333333;
+    width: 100%;
+}
+
+.child {
+    text-decoration: none;
+    color: black;
+}
+.block2 {
+	display: flex;
+    justify-content: center;
+	min-height: 90px;
+    padding: 0 80px;
+    border: 2px solid red;
+}
+
+.search-txt {
+    display: flex;
+    border-radius: 71px;
+    width: 50%;
+    height: 40px;
+    justify-content: space-between;
+	transition: .4s;
+    font-family: 'Value Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(51, 51, 51, 0.75);
+    border: 2px solid rgba(139, 71, 149, 0.8);
+    letter-spacing: -0.01em;
+    margin-left: 0px;
+    padding-left: 30px;
+    flex: 2;
+    margin: 20px;
+
+}
+.logo2{
+    position: relative;
+    display: flex;
+    width: 10px;
+    justify-content: s;
+    border: 2px solid black;
+    align-items: center;
+    flex-basis: 350px;
+
+}
+
+
+
+.logo_items {
+    display: flex;
+    justify-content: space-between;
+    padding-right:50px ;
+    padding-left:30px;
+    border: 2px solid black;
+    align-items: center;
+    list-style: none;
+    font-family: sans-serif;
+    
+
+}
+
+.block2_user-icon {
+    cursor: pointer;
+    
+}
+
+.block2_user-icon:hover path {
+    stroke: red;
+}
+
+.block2_user-icon:hover circle {
+    stroke: red;
+}
+.logo_user_ponel {
+    text-decoration: none;
+    color: #333333;
+    
+}
+.menu_size {
+    display: flex;
+    text-decoration: none;
+    color: black;
+
+}
+.menu_size ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 78px;
+    text-decoration: none;
+    color: black;
+
+}
+.menu_size_nbc {
+    text-decoration: none;
+    color: black;
+    padding-right:20px;
+    transition: 0.2s;
+    font-family: sans-serif;
+
+
+}
+
