@@ -174,7 +174,7 @@ body {
 
 .list{
     height: 60px;
-    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1340,7 +1340,7 @@ body {
     width: 100%;
 }
 .desk-box{
-    width: 1532px;
+    width: 100%;
     height: 730px;
     background: #EDEBE9;
 }
@@ -1795,3 +1795,15 @@ body {
 .class-icon__oll{
     margin-left: 25px;
 }
+.end-text:hover{
+    color: #8B4795;
+}
+
+@media (max-width: 960px) {
+
+    .services-box__design-img {
+        display: none;
+
+    }
+}
+

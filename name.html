@@ -5,6 +5,8 @@
   <title>Магазин</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="col.css">
+  <link rel="stylesheet" href="phone.css">
+
 </head>
 <body>
 <div class="header container">
@@ -57,13 +59,20 @@
   <a href="#" class="list-text">ПРИХОЖАЯ</a>
   <a href="#" class="list-text">ГОСТИНАЯ</a>
   <a href="#" class="list-text">МЯГКАЯ МЕБЕЛЬ</a>
-  <a href="#" class="list-text">ОБЕДЕННЫЕ ЗОНЫ</a>
-  <a href="#" class="list-text">СТУЛЬЯ</a>
-  <a href="#" class="list-text">СТОЛЫ</a>
-  <a href="#" class="list-text">МАТРАСЫ</a>
-  <a href="#" class="list-text">ДЕТСКАЯ</a>
-  <a href="#" class="list-text">ТЕКСТИЛЬ ДЛЯ ДОМА</a>
-  <a href="#" class="list-text">КОЛЛЕКЦИИ</a>
+  <div class="menu__mobile">
+    <div class="menu__mobile_button">
+      <span></span>
+    </div>
+  </div>
+
+  <a href="#" class="list-text list-text__on">ОБЕДЕННЫЕ ЗОНЫ</a>
+  <a href="#" class="list-text list-text__on">СТУЛЬЯ</a>
+  <a href="#" class="list-text list-text__on">СТОЛЫ</a>
+  <a href="#" class="list-text list-text__on">МАТРАСЫ</a>
+  <a href="#" class="list-text list-text__on">ДЕТСКАЯ</a>
+  <a href="#" class="list-text list-text__on">ТЕКСТИЛЬ ДЛЯ ДОМА</a>
+  <a href="#" class="list-text list-text__on">КОЛЛЕКЦИИ</a>
+
 </div>
 <div class="cover">
 <div class="cover-bac">
@@ -96,15 +105,15 @@
       <img src="image/armchair-bac.png" alt="" class="cover-image__armchair-bac">
       <img src="image/armchair.png" alt="">
     </div>
-    <div class="cover-image__hallway-image">
+    <div class="cover-image__hallway-image cover-image__off">
       <img src="image/hallway-background.png" alt="">
       <img src="image/hallway-image.png" alt="">
     </div>
-    <div class="cover-image__kitchen">
+    <div class="cover-image__kitchen cover-image__off">
       <img src="image/kitchen-bac.png" alt="">
       <img src="image/kitchen.png" alt="">
     </div>
-    <div class="cover-image__bedroom">
+    <div class="cover-image__bedroom cover-image__off">
       <img src="image/bedroom-bac.png" alt="">
       <img src="image/bedroom.png" alt="">
     </div>
@@ -178,7 +187,7 @@
           </button>
         </div>
       </div>
-      <div class="card-chair-oll">
+      <div class="card-chair-oll card-mobile__off">
         <div class="card-chair">
           <img src="image/chair.png" alt="">
           <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +210,7 @@
           </button>
         </div>
       </div>
-      <div class="card-bed__oll">
+      <div class="card-bed__oll card-mobile__off">
         <div class="card-bed">
           <img src="image/card-bed.png" alt="">
           <svg class="card-favorites"  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,7 +280,7 @@
       </div>
     </div>
     <div class="card-holder">
-      <div class="card-sofa__oll">
+      <div class="card-sofa__oll card-mobile__off">
         <div class="card-sofa">
           <img src="image/big-sofa.png" alt="">
           <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +308,7 @@
           </div>
         </div>
       </div>
-      <div class="card-table-oll">
+      <div class="card-table-oll card-mobile__off">
         <div class="card-table">
           <img src="image/table.png" alt="" >
           <svg class="card-favorites" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -470,7 +479,7 @@
       </div>
     </div>
     <div class="construct-box">
-      <img src="image/construct-room.png" alt="" class="">
+      <img src="image/construct-room.png" alt="" class="construct-box__img">
       <div class="construct-box__group">
         <p class="construct-box__text">Бруклин</p>
         <p class="construct-box__text-two">Комод</p>
@@ -546,18 +555,22 @@
     <img src="image/desk5.png" alt="" class="desk-img__five">
     <img src="image/desk6.png" alt="" class="desk-img__six">
     <img src="image/desk7.png" alt="" class="desk-img__seven">
-    <a class="desk-box__name">#МебельМечта</a>
-    <a class="desk-box__info">Интересные идеи<br> для твоего дома<br>
-      и квартиры</a>
-    <button class="desk-box__vk styled" type="button">
-      Мы ВКонтакте
-    </button>
-    <button class="desk-box__odn styled" type="button">
-      Мы в Одноклассниках
-    </button>
-    <button class="desk-box__inst styled" type="button">
-      Мы в Instagram
-    </button>
+    <div class="desk-name__box">
+      <a class="desk-box__name">#МебельМечта</a>
+      <a class="desk-box__info">Интересные идеи<br> для твоего дома<br>
+        и квартиры</a>
+      <div class="desk-button__name">
+        <button class="desk-box__vk styled" type="button">
+          Мы ВКонтакте
+        </button>
+        <button class="desk-box__odn styled" type="button">
+          Мы в Одноклассниках
+        </button>
+        <button class="desk-box__inst styled" type="button">
+          Мы в Instagram
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 <div class="end">
@@ -566,42 +579,42 @@
       <div class="end-box__text-one">
         <p>Каталог</p>
         <div class="end-redact__text">
-          <a href="#">Шкафы</a>
-          <a href="#">Спальня</a>
-          <a href="#">Кухня</a>
-          <a href="#">Прихожая</a>
-          <a href="#">Гостинная</a>
-          <a href="#">Спальные гарнитуры</a>
-          <a href="#">Мягкая мебель</a>
+          <a class="end-text" href="#">Шкафы</a>
+          <a class="end-text" href="#">Спальня</a>
+          <a class="end-text" href="#">Кухня</a>
+          <a class="end-text" href="#">Прихожая</a>
+          <a class="end-text" href="#">Гостинная</a>
+          <a class="end-text" href="#">Спальные гарнитуры</a>
+          <a class="end-text" href="#">Мягкая мебель</a>
         </div>
       </div>
           <div class="end-redact__text-two">
-          <a href="#">Обеденные зоны</a>
-          <a href="#"> Стулья</a>
-          <a href="#">Столы</a>
-          <a href="#">Матрасы</a>
-          <a href="#">Детская</a>
-          <a href="#">Коллекция</a>
+          <a class="end-text" href="#">Обеденные зоны</a>
+          <a class="end-text" href="#"> Стулья</a>
+          <a class="end-text" href="#">Столы</a>
+          <a class="end-text" href="#">Матрасы</a>
+          <a class="end-text" href="#">Детская</a>
+          <a class="end-text" href="#">Коллекция</a>
         </div>
 
       <div class="end-redact__three">
         <p>Покупателям</p>
       <div class="end-redact__four">
-        <a href="#">Каталог</a>
-        <a href="#">Скидки и акции</a>
-        <a href="#">Как купить</a>
-        <a href="#">Доставка</a>
-        <a href="#">Гарантии</a>
-        <a href="#">Оплата</a>
+        <a class="end-text" href="#">Каталог</a>
+        <a class="end-text" href="#">Скидки и акции</a>
+        <a class="end-text" href="#">Как купить</a>
+        <a class="end-text" href="#">Доставка</a>
+        <a class="end-text" href="#">Гарантии</a>
+        <a class="end-text" href="#">Оплата</a>
       </div>
       </div>
       <div class="end-redact__five">
         <p>Всё о Мечте</p>
-        <div class="end-five__redact">
-          <a href="#">О нас</a>
-          <a href="#">Магазины</a>
-          <a href="#">Оптовикам</a>
-          <a href="#">Контакты</a>
+        <div class="end-five__redact" >
+          <a class="end-text" href="#">О нас</a>
+          <a class="end-text" href="#">Магазины</a>
+          <a class="end-text" href="#">Оптовикам</a>
+          <a class="end-text" href="#">Контакты</a>
         </div>
       </div>
       <div class="end-redact__six">
@@ -716,4 +729,6 @@
 </div>
 
 </body>
+<script rel="stylesheet" src="./done.js">
+</script>
 </html>
