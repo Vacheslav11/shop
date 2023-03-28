@@ -1799,11 +1799,6 @@ body {
     color: #8B4795;
 }
 
-@media (max-width: 960px) {
-
-    .services-box__design-img {
-        display: none;
-
-    }
+.menu__mobile-text{
+    display: none;
 }
-
