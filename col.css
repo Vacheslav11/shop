@@ -581,7 +581,7 @@ body {
 
 }
 .card-text__chair{
-    position: absolute;
+
 
 }
 .card-text__bed{
@@ -1095,6 +1095,21 @@ body {
     top: 615px;
     left: 86%;
 }
+.test-stop__old{
+    position: absolute;
+    top: 335px;
+    left: 80%;
+}
+.test_old{
+    height: 58px;
+    width:  58px;
+    position: relative;
+    left: 30%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid rgba(51, 51, 51, 0.27);
+    background: #FFFFFF;
+}
 
 .box-svg__favorite{
     position: absolute;
@@ -1340,56 +1355,68 @@ body {
     width: 100%;
 }
 .desk-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    height: 730px;
+    height: 728px;
     background: #EDEBE9;
 }
+.one-png{
+    width: 56.3%;
+    height: 431px;
+
+}
+.two-png{
+    width: 23.4%;
+}
+.desk-name__box{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.desk-button__name{
+    gap: 10px;
+    display: grid;
+}
 .desk-img__one{
-    position: absolute;
-    width: 280px;
-    height: 283px;
+    width: 32.5%;
+
+
 }
 .desk-img__two{
-    position: absolute;
-    left: 450px;
+    width: 33.25%;
+
 }
 .desk-img__three{
-    position: absolute;
-    left: 746px;
+    width: 33.25%;
+
 }
 .desk-img__four{
-    position: absolute;
-    left: 1333px;
+    width: 32.5%;
+
 }
 .desk-img__five{
-    position: absolute;
-    top: 299px;
+    width: 67%;
+
 }
-.desk-img__six{
-    position: absolute;
-    top: 299px;
-    left: 450px;
-}
+.desk-img__six,
 .desk-img__seven{
-    position: absolute;
-    top: 373px;
-    left: 1333px;
-    width: 354px;
-    height: 357px;
+    width: 100%;
+
 }
 .desk-box__name{
-    position: absolute;
-    top: 204px;
-    left:1060px;
     font-family: 'Value Sans Pro',sans-serif;
     font-size: 32px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.005em;
-    text-align: left;
+    text-align: center;
 }
 .desk-box__info{
-    position: absolute;
+
     top: 258px;
     left:1080px;
     font-family: 'Value Sans Pro',sans-serif;
@@ -1401,7 +1428,7 @@ body {
 
 }
 .desk-box__vk{
-    position: absolute;
+
     top: 380px;
     left:1070px;
     width: 220px;
@@ -1421,7 +1448,7 @@ body {
     border: 0;
 }
 .desk-box__odn{
-    position: absolute;
+
     top: 438px;
     left:1070px;
     width: 220px;
@@ -1442,7 +1469,7 @@ body {
     white-space: nowrap;
 }
 .desk-box__inst{
-    position: absolute;
+
     top: 499px;
     color: #333333;
     left:1070px;
@@ -1800,5 +1827,8 @@ body {
 }
 
 .menu__mobile-text{
+    display: none;
+}
+.off{
     display: none;
 }
