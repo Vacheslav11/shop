@@ -1,4 +1,10 @@
 @media (max-width: 1024px) {
+    .list{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
     .group{
         margin-left: auto;
@@ -47,7 +53,7 @@
         display: block;
     }
     .construct-box__left{
-        width: 500px;
+        width: 45%;
         position: relative;
         bottom: 170px;
         left: 30%;
@@ -67,9 +73,6 @@
     .group-cards__room{
         display: none;
     }
-    .group-cards__closet{
-        left: 50%;
-    }
     .group-text__back{
         left: 18%;
     }
@@ -84,15 +87,19 @@
     .services-box__delivery,
     .services-box__delivery,
     .services-box__installation{
-        margin: 0;
+        margin: 0 0 10px;
         width: 100%;
         padding: 0;
     }
     .services-box__installation-img,
     .services-box__delivery-img,
     .services-box__cargo-img,
+    .services-box__design-img,
     .services-box__size-img{
-        left: 60%;
+        margin: 3% 0 0 55%;
+    }
+    .services-box__installation-img{
+
     }
     .desk img{
     }
@@ -101,7 +108,7 @@
     .desk-box{
         flex-direction: row;
         display: block;
-        height: 2192px;
+        height: 2404px;
     }
     .desk-img__three{
 
@@ -128,7 +135,7 @@
         display: none;
     }
     .two-png{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -291,6 +298,38 @@
     .off{
         display: none;
     }
+    .test_old{
+        bottom: 160px;
+        left: 0;
+    }
+    .cover-image{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cover-image__sofa,
+    .cover-image__wing,
+    .cover-image__hallway,
+    .cover-image__bed,
+    .cover-image__armchair,
+    .cover-image__hallway-image,
+    .cover-image__kitchen,
+    .cover-image__bedroom{
+        width: 70%;
+
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        height: 205px;
+    }
+    .home-icon__oll{
+        display: flex;
+
+    }
+    .home-icon{
+        margin: 20px;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -301,13 +340,9 @@
     .services-box__design-img{
         width: 30%;
     }
-    .desk-img__six,
-    .desk-img__seven{
-        width: 99%;
-    }
-    .desk-box{
-        height: 2030px;
-    }
+
+
+
 
     .construct-box__img{
         width: 100%;
@@ -360,9 +395,7 @@
     .title-text:after{
         width: 450px;
     }
-    .desk-box{
-        height: 1879px;
-    }
+
 }
 @media only screen and (max-width: 864px) {
     .construct-link__back{
@@ -378,9 +411,7 @@
     .desk-img__five{
         right: 348px;
     }
-    .desk-box{
-        height: 1787px;
-    }
+
     .home-search__input{
         margin-left: auto;
         margin-right: auto;
@@ -420,27 +451,23 @@
     .title-text:after{
         width: 380px;
     }
+    .two-png{
+        display: block;
+    }
+    .desk-box{
+        height: 3200px;
+    }
 
 }
 @media only screen and (max-width: 810px) {
-    .end-button{
-        padding: 0;
-    }
-    .desk-box{
-        height: 1651px;
-    }
+
     .construct-box__left{
-        left: 20%;
+        left: 15%;
+
     }
     .test-stop{
         bottom: 50px;
     }
-   .cover-image__sofa,
-   .cover-image__wing,
-   .cover-image__hallway,
-   .cover-image__bed{
-       width: 40%;
-   }
    .cover-image__armchair{
        display: none;
    }
@@ -468,6 +495,9 @@
 }
 @media only screen and (max-width: 768px) {
 
+    .home-search__image{
+        right: 90px;
+    }
     .title-text:after{
         width: 340px;
     }
@@ -477,8 +507,11 @@
         margin: 20px auto;
 
     }
+    .end-input__wrapper{
+        align-items: center;
+    }
     .desk-box{
-        height: 1545px;
+
     }
     .catalog{
         padding-top: 240px;
@@ -492,11 +525,7 @@
         border-radius: 20px;
     }
     .end-box{
-        height: 1345px;
-    }
-
-    .box-end{
-        top: 785px;
+        height: 1360px;
     }
     .box-end__item-text{
         width: 25%;
@@ -511,17 +540,50 @@
     .test_old{
         height: 48px;
         width: 48px;
+        left: 90%;
+        top: 0;
     }
-    .group-cards__closet{
-        left: 53%;
+    .group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .svg_forward{
         top: 710px;
     }
+    .group{
+        display: flex;
+    }
+    .box-end__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    .box-end{
+        height: 100%;
+        top: 800px;
+    }
 
 }
 @media only screen and (max-width: 720px) {
+    .construct-box__group,
+    .construct-link_none,
+    .construct-link,
+    .construct-link__left,
+    .construct-link__back{
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
     .list-text{
         padding-right: 1px;
     }
@@ -532,7 +594,7 @@
         margin-right: 5px;
     }
     .title-text:after{
-        width: 300px;
+        display: none;
     }
     .services-box__size-img{
         width: 40%;
@@ -540,9 +602,6 @@
     .group-text__new,
     .group-text__style{
         left: 5%;
-    }
-    .group-cards__closet{
-        left: 50%;
     }
     .construct-box__group{
         width: 175px;
@@ -568,11 +627,9 @@
         top: 175px;
     }
     .desk-box{
-        height: 1424px;
+
     }
-    .seven-inf{
-        font-size: 15px;
-    }
+
     .box-end{
         top: 820px;
     }
@@ -611,8 +668,14 @@
     .construct{
         border-bottom: none;
     }
-    .construct-box__left-img{
-
+    .test_old{
+        left: 70%;
+    }
+    .box-end {
+        top: 850px;
+    }
+    .end-box {
+        height: 1410px;
     }
     .construct-box__left{
         margin: 0;
@@ -631,11 +694,12 @@
         margin-right: 3px;
     }
     .desk-box{
-        height: 1223px;
+        height: 2496px;
+
     }
     .services-box__size-text{
         left: 20px;
-        top: 162px;
+        top: 130px;
     }
     .services-box__size,
     .services-box__design,
@@ -661,6 +725,75 @@
         top: 129px;
     }
 }
+@media only screen and (max-width: 420px){
+    .construct-box__left-img{
+        width: 70%;
+    }
+    .test-border__left,
+    .test-border__right{
+        top: auto;
+    }
+    .test-border__right{
+        left: 35%;
+    }
+    .test-border__left{
+        left: 20%;
+    }
+    .cover-text__discount{
+        font-size: 50px;
+    }
+
+    .header-container__item{
+        align-items: center;
+    }
+    .desk,
+    .services{
+        padding: 15%;
+    }
+    .construct-text__name{
+        font-size: 28px;
+    }
+    .group-cards__closet{
+        height: 450px;
+    }
+    .end-box__text{
+        padding-left: 15%;
+    }
+    .test_old{
+        left: 0;
+    }
+    .catalog-furniture__catalog{
+        left: 4px;
+        top: 155px;
+    }
+    .test_old{
+        height: 35px;
+        width: 35px;
+        top: -50px;
+    }
+    .test{
+        height: 35px;
+        width: 35px;
+    }
+    .svg_forward{
+        width: 20px;
+    }
+    .svg_back{
+        width: 20px;
+    }
+    .desk-box{
+        height: 1408px;
+    }
+    .end-redact__text-six{
+        font-size: 14px;
+    }
+    .seven-inf{
+        font-size: 10px;
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width: 320px){
     .title-text:after{
         display: none;
@@ -683,16 +816,28 @@
     .construct-text__name{
         font-size: 28px;
     }
-    .home-logo{
-        display: none;
-    }
+
     .container{
         padding: 0;
     }
-    .cover-image__bed,
-    .cover-image__hallway,
-    .cover-image__wing,
-    .cover-image__sofa{
+    .seven-address{
+        font-size: 12px;
+    }
+    .seven-inf{
+        font-size: 7px;
+    }
+    .catalog-furniture__catalog {
+        left: 4px;
+        top: 123px;
+    }
+    .svg_back,
+    .svg_forward{
+        display: none;
+    }
+    .group-text__forward-oll{
+        margin-top: 60px;
+    }
+    .home-search__image{
         display: none;
     }
 
